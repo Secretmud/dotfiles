@@ -3,6 +3,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'nanotech/jellybeans.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -17,14 +18,26 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+syntax on
+
+set number
+set relativenumber
+set t_Co=256
 set autoindent
 set textwidth=80
 
-func! WordProcessorMode()
+func! WordProcessorModeEnglish()
 	setlocal textwidth=80
 	setlocal smartindent
-	setlocal spell spelllang=en_gb
-endfu
+	setlocal spelllang=en_gb
+endfunction
 
-com! WP call WordProcessorMode()
+func! WordProcessorModeNorwegian()
+	setlocal textwidth=80
+	setlocal smartindent
+	setlocal spelllang=no
+endfunction
+
+com! WPe call WordProcessorModeEnglish()
+com! WPn call WordProcessorModeNorwegian()
 let g:pymode_python = 'python3'
