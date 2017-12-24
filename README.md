@@ -8,7 +8,7 @@ Feel free to take them and do with them as you're want.
 It's the easiset way to do backups
 
 
-# Requirements for to use:
+# Requirements:
 
 If you want to use the .vimrc file you would need the following:
 * Vundle
