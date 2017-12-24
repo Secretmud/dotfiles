@@ -27,18 +27,11 @@ set t_Co=256
 set autoindent
 set textwidth=80
 
-func! WordProcessorModeEnglish()
+func! WordProcessorEng()
 	setlocal textwidth=80
 	setlocal smartindent
-	setlocal spelllang=en_gb
+	setlocal spell spelllang=en_gb
 endfunction
 
-func! WordProcessorModeNorwegian()
-	setlocal textwidth=80
-	setlocal smartindent
-	setlocal spelllang=no
-endfunction
-
-com! WPe call WordProcessorModeEnglish()
-com! WPn call WordProcessorModeNorwegian()
+com! WPe call WordProcessorEng()
 let g:pymode_python = 'python3'
