@@ -33,5 +33,12 @@ func! WordProcessorEng()
 	setlocal spell spelllang=en_gb
 endfunction
 
+func! WordProcessorNor()
+    setlocal textwidth=80
+    setlocal smartindent
+    setlocal spell spelllang=nb_NO
+endfunction
+
 com! WPe call WordProcessorEng()
+com! WPn call WordProcessorNor()
 let g:pymode_python = 'python3'
