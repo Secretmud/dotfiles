@@ -13,13 +13,14 @@ Plugin 'klen/python-mode'
 call vundle#end()
 filetype plugin indent on
 
+
+syntax on
+colorscheme jellybeans
+
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-
-syntax on
-
 set number
 set relativenumber
 set t_Co=256
