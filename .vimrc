@@ -1,22 +1,7 @@
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'honza/vim-snippets'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'klen/python-mode'
-
-
-call vundle#end()
 filetype plugin indent on
 
 
 syntax on
-colorscheme jellybeans
-
 set expandtab
 set tabstop=4
 set softtabstop=4
