@@ -1,7 +1,10 @@
-URxvt.background:       white
+!Changes related to X
+Xcursor.size:           10
+
+URxvt.background:       black
 URxvt.foreground:       white
 URxvt.intensitiyStyles: false
-URxvt.font:             xft:xos4 Terminus:size=11
+URxvt.font:             xft:xos4 Terminus:size=10
 URxvt.scrollBar:        false
 URxvt.cursorColor:      magenta
 URxvt.cursorSize:       1
@@ -12,26 +15,26 @@ URxvt.shading:          15
 URxvt.inheritPixmap:    true
 
 !Black
-URxvt*color0:   #212121
-URxvt*color8:   #000000
+URxvt*color0:           #212121
+URxvt*color8:           #000000
 !Red
-URxvt*olor1:    #ef9a9a
-URxvt*color9:   #fa44336
+URxvt*olor1:            #ef9a9a
+URxvt*color9:           #fa44336
 !Green
-URxvt*color2:   #81c784
-URxvt*color10:  #1b5e20
+URxvt*color2:           #81c784
+URxvt*color10:          #1b5e20
 !Yellow
-URxvt*color3:   #fff176
-URxvt*color11:  #ffff00
+URxvt*color3:           #fff176
+URxvt*color11:          #ffff00
 !Blue
-URxvt*color4:   #4fc3f7
-URxvt*color12:  #01579b
-!Magenta
-URxvt*color5:   #9575cd
-URxvt*color13:  #311b92
+URxvt*color4:           #4fc3f7
+URxvt*color12:          #01579b
+!Purple
+URxvt*color5:           #ede7f6
+URxvt*color13:          #9575cd
 !Cyan
-URxvt*color6:   #80deea
-URxvt*color14:  #00e5ff
+URxvt*color6:           #80deea
+URxvt*color14:          #00e5ff
 !White
-URxvt*color7:   #fafafa
-URxvt*color15:  #ffffff
+URxvt*color7:           #fafafa
+URxvt*color15:          #ffffff
