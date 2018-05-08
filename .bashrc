@@ -22,7 +22,10 @@ alias sc="sudo pacman -Sc"
 #Network shit
 alias n5="dhcpcd enp5s0"
 alias n6="dhcpcd enp6s0"
-
+alias vpn-de-start="sudo systemctl start openvpn-client@protonvpn.service"
+alias vpn-de-stop="sudo systemctl stop openvpn-client@protonvpn.service"
+alias vpn-jp-start="sudo systemctl start openvpn-client@protonvpn-jp.service"
+alias vpn-jp-stop="sudo systemctl stop openvpn-client@protonvpn-jp.service"
 
 #script
 export PATH=$PATH:~/Documents/Scripts/
