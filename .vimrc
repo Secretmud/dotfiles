@@ -1,7 +1,9 @@
+execute pathogen#infect()
+
 filetype plugin indent on
-
-
 syntax on
+set splitbelow
+set splitright
 set expandtab
 set tabstop=4
 set softtabstop=4
@@ -11,6 +13,21 @@ set relativenumber
 set t_Co=256
 set autoindent
 set textwidth=80
+colorscheme jellybeans
+set encoding=UTF-8
+
+let g:jellybeans_use_lowcolor_black = 1
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
+let g:airline_theme = 'bubblegum'
+let g:airline_powerline_fonts = 1
+let g:ycm_use_clangd = 0
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
 
 func! WordProcessorEng()
 	setlocal textwidth=80
@@ -26,4 +43,5 @@ endfunction
 
 com! WPe call WordProcessorEng()
 com! WPn call WordProcessorNor()
-let g:pymode_python = 'python3'
+let g:pymode_python = "python3"
+let g:tex_flavour = "latex"
