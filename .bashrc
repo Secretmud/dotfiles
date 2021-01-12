@@ -7,10 +7,10 @@
 
 alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
-PS1='\033[1;36m\]\t \033[00m\]\033[01;32m\] \u \033[00m\]@ \033[01;35m\]\W\033[00m\] >'
+#PS1='\u@\h \W >'
 TERM='rxvt-unicode'
 COLORTERM='rxvt-unicode-256color'
-
+export PS1="\[\e[32m\]\u \[\e[m\]\[\e[33m\]@ \[\e[m\]\[\e[36m\]\h \[\e[m\]\[\e[33m\]\W \[\e[m\]\[\e[31m\]\`parse_git_branch\`\[\e[m\] >"
 
 #Making life easier
 alias ra="ranger"
@@ -27,5 +27,25 @@ alias vpn-de-stop="sudo systemctl stop openvpn-client@protonvpn.service"
 alias vpn-jp-start="sudo systemctl start openvpn-client@protonvpn-jp.service"
 alias vpn-jp-stop="sudo systemctl stop openvpn-client@protonvpn-jp.service"
 
+#Flatpak
+alias spotify="flatpak run com.spotify.Client"
+
 #script
-export PATH=$PATH:~/Documents/Scripts/
+export PATH=$PATH:~/Scripts/tools/
+export PATH=$PATH:~/.scripts
+export PATH=$PATH:~/Programs/intelFPGA_lite/18.1/quartus/bin/
+export PATH=$PATH:~/Programs/bin/
+export PATH=$PATH:~/Programs/flutter/bin
+export PATH=$PATH:~/.gem/ruby/2.6.0/bin
+export PATH=$PATH:~/Programs/emmc/emsdk/emsdk_env.sh
+export PATH=$PATH:~/.local/bin
+
+export QSYS_ROOTDIR="/home/secret/Programs/intelFPGA_lite/18.1/quartus/sopc_builder/bin"
+export QSYS_ROOTDIR="/home/secret/Programs/flutter/bin"
+export TERM=xterm-256color
+
+
+# get current branch in git repo
+function parse_git_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
