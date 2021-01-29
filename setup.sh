@@ -40,8 +40,6 @@ do
 done
 
 # Fetch github repositories using the github api. 
-# curl https://api.github.com/users/Secretmud/repos | jq '.[].html_url'
-# curl https://api.github.com/users/$gituser/repos | jq '.[].html_url'
 gh=$(curl -s https://api.github.com/users/$gituser/repos | jq -r '.[].html_url')
 cd ~/Git
 
@@ -63,9 +61,9 @@ cd i3config
 
 printf "$(pwd) setting up symlinks from this directory\n"
 
-ln -Ls $(pwd)/.bashrc $home/.bashrc || printf ".bashrc symlink exists\n"
-ln -Ls $(pwd)/.vimrc $home/.vimrc || printf ".vimrc symlink exists\n"
-ln -Ls $(pwd)/.emacs $home/.emacs || printf ".emacs symlink exists\n"
-ln -Ls $(pwd)/config $home/.config/i3/config || printf ".i3config symlink exists\n"
-ln -Ls $(pwd)/i3status.conf $home/.i3status.conf || printf ".i3status.conf symlink exists\n"
+ln -sf $(pwd)/.bashrc $home/.bashrc
+ln -sf $(pwd)/.vimrc $home/.vimrc
+ln -sf $(pwd)/.emacs $home/.emacs
+ln -sf $(pwd)/config $home/.config/i3/config
+ln -sf $(pwd)/.i3blocks.conf $home/.i3blocks.conf
 
