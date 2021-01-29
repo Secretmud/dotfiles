@@ -13,16 +13,16 @@ set relativenumber
 set t_Co=256
 set autoindent
 set textwidth=80
-colorscheme jellybeans
+set background=dark
+colorscheme gruvbox
 set encoding=UTF-8
 
-let g:jellybeans_use_lowcolor_black = 1
-
+let g:gruvbox_contrast_dark = 'hard'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_theme = 'bubblegum'
+let g:airline_theme = 'gruvbox'
 let g:airline_powerline_fonts = 1
 let g:ycm_use_clangd = 0
 let g:NERDTreeFileExtensionHighlightFullName = 1

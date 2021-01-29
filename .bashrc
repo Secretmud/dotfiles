@@ -49,3 +49,4 @@ export TERM=xterm-256color
 function parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
+export PATH=$PATH:/home/secret/.gem/ruby/2.7.0/bin:~/.scripts
