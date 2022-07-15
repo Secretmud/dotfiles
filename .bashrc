@@ -40,6 +40,8 @@ export PATH=$PATH:~/.gem/ruby/2.6.0/bin
 export PATH=$PATH:~/Programs/emmc/emsdk/emsdk_env.sh
 export PATH=$PATH:~/.local/bin
 
+export EDITOR=vim
+
 export QSYS_ROOTDIR="/home/secret/Programs/intelFPGA_lite/18.1/quartus/sopc_builder/bin"
 export QSYS_ROOTDIR="/home/secret/Programs/flutter/bin"
 export TERM=xterm-256color
@@ -49,4 +51,4 @@ export TERM=xterm-256color
 function parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
-export PATH=$PATH:/home/secret/.gem/ruby/2.7.0/bin:~/.scripts
+export PATH=$PATH:/home/secret/.gem/ruby/2.7.0/bin

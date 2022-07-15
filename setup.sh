@@ -6,9 +6,8 @@ gituser=""
 gitmail=""
 # This will be used later, not important right now.
 gitpass=""
-home=~
 
-if [[ ! -f $home/.gitconfig ]]
+if [[ ! -f $HOME/.gitconfig ]]
 then
 	printf "\nUsername:\t"
 	read gituser
@@ -31,11 +30,11 @@ directories=("Documents" "Downloads" "Git" "Picutres" "Videos" "Music")
 
 for i in ${directories[@]};
 do
-	if [[ ! -d $home/$i ]]
+	if [[ ! -d $HOME/$i ]]
 	then
-		mkdir $home/$i
+		mkdir $HOME/$i
 	else
-		printf "$home/$i already exists.\n"
+		printf "$HOME/$i already exists.\n"
 	fi
 done
 
@@ -57,13 +56,13 @@ do
 	fi
 done
 
-cd i3config
+cd dotfiles
 
 printf "$(pwd) setting up symlinks from this directory\n"
 
-ln -sf $(pwd)/.bashrc $home/.bashrc
-ln -sf $(pwd)/.vimrc $home/.vimrc
-ln -sf $(pwd)/.emacs $home/.emacs
-ln -sf $(pwd)/config $home/.config/i3/config
-ln -sf $(pwd)/.i3blocks.conf $home/.i3blocks.conf
+ln -sf $(pwd)/.bashrc $HOME/.bashrc
+ln -sf $(pwd)/.vimrc $HOME/.vimrc
+ln -sf $(pwd)/.emacs $HOME/.emacs
+ln -sf $(pwd)/config $HOME/.config/i3/config
+ln -sf $(pwd)/.i3blocks.conf $HOME/.i3blocks.conf
 
